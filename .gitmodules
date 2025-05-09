@@ -1,0 +1,3 @@
+[submodule "CGraph"]
+	path = CGraph
+	url = git@github.com:ChunelFeng/CGraph.git
