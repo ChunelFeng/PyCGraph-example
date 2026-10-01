@@ -8,7 +8,7 @@
 @Date    ：2025/5/5 23:42 
 """
 
-from PyCGraph import GNode, CStatus, GPipeline
+from pycgraph import GNode, CStatus, GPipeline
 from MyCppMaterials import MyCppSimpleGParam, MyCppFatGParam, MyPosition
 from MyCppMaterials import MyCppGNode1, MyCppGNode2, MyCppGNode3
 
@@ -62,7 +62,7 @@ def main():
     pipeline.registerGElement(cpp_e, {py_d}, 'nodeE')
     pipeline.registerGElement(py_f, {cpp_e}, 'nodeF')
 
-    pipeline.process()
+    pipeline.process(1)
 
 
 if __name__ == '__main__':
